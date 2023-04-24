@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.ust.rest.services&apos; to &apos;com.ust.rest.services.impl&apos;&#x0D;&#x0A;- Original project: &apos;firstrestmongojpa&apos;&#x0D;&#x0A;- Original element: &apos;firstrestmongojpa/src/main/java/com.ust.rest.services&apos;&#x0D;&#x0A;- Renamed element: &apos;firstrestmongojpa/src/main/java/com.ust.rest.services.impl&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.ust.rest.services&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ust.rest.services" name="com.ust.rest.services.impl" qualified="false" references="true" stamp="1681790276680" textual="false" version="1.0"/>
+</session>

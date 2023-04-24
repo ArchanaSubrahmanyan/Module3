@@ -1,0 +1,15 @@
+package com.ust.ioc;
+
+public class TestLogin {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Login login = new Login();
+		login.setUserName("johndoe");
+		login.setPassword("winnyminny");
+		String result=login.validate();
+		System.out.println(result);
+	}
+
+}

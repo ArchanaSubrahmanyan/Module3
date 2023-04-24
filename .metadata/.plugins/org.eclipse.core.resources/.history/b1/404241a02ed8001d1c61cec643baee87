@@ -1,0 +1,11 @@
+package com.ust.iocautowiring;
+
+public class B {
+
+	A a;
+	
+	public void setA(A a) {
+		System.out.println("setA() called...");
+		this.a=a;
+	}
+}

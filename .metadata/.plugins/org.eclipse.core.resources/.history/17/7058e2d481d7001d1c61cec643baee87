@@ -1,0 +1,14 @@
+package com.ust.ioc;
+
+public class DBConnection implements Connection{
+
+	public  DBConnection getConnection() {
+		
+		System.out.println("getConnection called....");
+		return new DBConnection();
+	}
+}
+
+//object oriented programming takes pull based approach
+//A class needs to look up or create instances on which it depends
+//spring ioc is based on push approach.In other words object required by a class are injected with the help of configuration file.

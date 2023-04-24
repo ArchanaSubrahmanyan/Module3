@@ -1,0 +1,8 @@
+package com.ust.ioc;
+
+public class Connection {
+
+	public static Connection getConnection() {
+		return new Connection();
+	}
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+      
+       <bean name="connection" class="com.ust.ioc.DBConnection">
+		   <property name="url" value="jdbc:mysql://localhost:3306/sakila"></property>
+		   <property name="dbUserName" value="root"></property>
+		   <property name="dbPassword" value="pass@word1"></property>
+		   
+	   </bean>
+       <bean name="login" class="com.ust.ioc.Login">
+		   <!-- setter injection-->
+		   <property name="db" ref="connection"></property>
+	   </bean>
+	   
+	   
+	   
+	   
+	   <bean name="point1" class="com.ust.ioc2.Point">
+		   <property name="x" value="1"></property>
+		   <property name="y" value="2"></property>
+	   </bean>
+	   <bean name="point2" class="com.ust.ioc2.Point">
+		   <property name="x" value="3"></property>
+		   <property name="y" value="4"></property>
+	   </bean>
+	   <bean name="line" class="com.ust.ioc2.Line" scope="prototype">
+		   <property name="p1" ref="point1"></property>
+		   <property name="p2" ref="point2"></property>
+	   </bean>
+</beans>
+       
+ 

@@ -1,0 +1,31 @@
+package com.ust.ioc2;
+
+public class Point {
+
+	private int x;
+	private int y;
+
+
+	public int getX() {
+		return x;
+	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+	}
+
+	public void drawLine() {
+		
+		System.out.println("from"+p1.getX()+","+p1.getY()+"...to..."+p2.getX()+","+p2.getY());
+	}
+	
+	
+}
